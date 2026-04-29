@@ -1,5 +1,10 @@
 const form = document.getElementById("rota");
 const seg = document.getElementById("seg");
+
+form.addEventListener('submit', function(evento) {
+evento.preventDefault(); // Impede o refresh da página
+});
+
 function FormRota(){
     form.hidden = false;
 }
